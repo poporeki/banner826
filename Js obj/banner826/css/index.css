@@ -1,0 +1,222 @@
+.banner-wrapper {
+    position: relative;
+}
+
+.banner-wrapper .banner {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 480px;
+    box-shadow: 0 0 5px #000;
+    width: 100%;
+}
+
+.banner-wrapper .banner:after {
+    display: block;
+    content: "";
+    height: 0;
+    clear: both;
+}
+
+.banner-wrapper .banner>li {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 480px;
+    float: left;
+    left: 100%;
+    transition: margin-left 0.5s;
+    overflow: hidden;
+}
+
+.banner-wrapper .banner>li>a>img {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.banner-wrapper .banner>li:nth-child(1) {
+    background-color: #C22323;
+}
+
+.banner-wrapper .banner>li:nth-child(2) {
+    background-color: #43BB58;
+}
+
+.banner-wrapper .banner>li:nth-child(3) {
+    background-color: #2676D8;
+}
+
+.banner-wrapper .banner>li:nth-child(4) {
+    background-color: #DF1F8A;
+}
+
+.banner-wrapper .banner>li:nth-child(5) {
+    background-color: #DFD31F;
+}
+
+.banner-wrapper .prev,
+.banner-wrapper .next {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    font-size: 200px;
+    line-height: 480px;
+    transition: left 0.5s,right 0.5s;
+}
+
+.banner-wrapper .prev:hover,
+.banner-wrapper .next:hover {
+    color: #E3E3E3;
+    transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+}
+
+.banner-wrapper .prev:active,
+.banner-wrapper .next:active {
+    transform: scale(.95, .95);
+    -webkit-transform: scale(.95, .95);
+}
+
+.banner-wrapper .prev {
+    left: 0;
+}
+
+.banner-wrapper .next {
+    right: 0;
+}
+
+
+/*-----------左右箭头---------------*/
+
+
+/*.banner-wrapper .prev,.banner-wrapper .next{
+	position: absolute;
+	display: block;
+	top: 140px;
+	z-index: 10;
+}
+
+.banner-wrapper .prev span:before{
+	position: absolute;
+	border: 1px solid #AAAAAA;
+	height: 40px; width: 0;
+	left: 45px; top: 0;
+	border-width: 5px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 10px 0 #aaa;
+    transition: transform 0.5s;
+    transform: scale(2);
+    transform: rotate(45deg);
+    content: "";
+}
+.banner-wrapper .prev span:hover{
+	border-color: #000;
+}
+.banner-wrapper .prev span:after{
+	position: absolute;
+	border: 1px solid #AAAAAA;
+	height: 40px;
+	width: 0;
+	left: 45px; top: 30px;
+	border-width: 5px;
+    border-radius: 4px;
+    -webkit-box-shadow:0 0 10px 0 #aaa;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    content:"";
+}
+.banner-wrapper .prev span ,.banner-wrapper .next span{
+	position: relative;
+	display: block;
+	transform: scale(2);
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+	transition: all 0.5s;
+}
+.banner-wrapper .prev span:active ,.banner-wrapper .next span:active{
+	transform: scale(1.95);
+}
+.banner-wrapper .next span:before{
+	position: absolute;
+	border: 1px solid #AAAAAA;
+	height: 40px; width:0;
+	right: 45px; top: 0;
+	border-width: 5px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 10px 0 #aaa;
+    transition: transform 0.5s;
+    
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    content:"";
+    
+}
+.banner-wrapper .next span:after{
+	position: absolute;
+	border: 1px solid #AAAAAA;
+	height: 40px; width: 0;
+	right: 45px; top: 30px;
+	border-width: 5px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 10px 0 #aaa;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+    content:"";
+}
+.banner-wrapper .prev{
+	display: block;
+	height: 200px;
+	width: 106px;
+	left: 0;
+}
+.banner-wrapper .next{
+	display: block;
+	height: 200px;
+	width: 106px;
+	right: 0;
+}*/
+
+.banner-wrapper .toggle-btns-list {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    left: 50%;
+    margin: 0 auto;
+}
+
+.banner-wrapper .toggle-btns-list>li {
+    display: inline-block;
+    margin: 0 1px;
+}
+
+.banner-wrapper .toggle-btns-list>li>a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    box-shadow: 0 0 2px #858585;
+	background:rgba(255, 255, 255, 0.5);
+    transition: background-color 1s;
+}
+
+.banner-wrapper .toggle-btns-list>li>a:hover {
+    box-shadow: 0 0 3px #858585;
+}
+
+.clicked-tog>a {
+    background-color: #E3791B !important;
+}

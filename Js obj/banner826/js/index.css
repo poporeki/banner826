@@ -1,0 +1,19 @@
+.banner-wrapper{
+	position:relative;
+	margin:0 auto;
+	height:480px;
+}
+.banner{
+	position: relative;
+	overflow: hidden;
+}
+.banner>li{
+	display: inline-block;
+}
+.banner>li>img{
+	display: block;
+	
+}
+.banner-wrapper .prev,.banner-wrapper .next{
+	display: block;
+}

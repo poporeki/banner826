@@ -1,0 +1,211 @@
+extends head
+
+block lkstyle
+ link(rel='stylesheet', href='../css/index.css')
+block title
+ title #{title}
+block content
+  body.index
+    #header.index-header
+      .navbar-header
+        .wid.clearfix
+          ul.nl
+            li.dropdown
+              .cw
+                i.cw-icon.fa.fa-map-marker
+                span 北京
+              .dropdown-layer
+          ul.nr.clearfix
+            li.navbar-login
+              a(href='##') 请登录
+              a(href='##') 免费注册
+            li.separation
+            li
+              a(href='##') 我的订单
+            li.separation
+            li
+              a(href='##') 我的京东
+            li.separation
+            li
+              a(href='##') 京东会员
+            li.separation
+            li
+              a(href='##') 企业采购
+            li.separation
+            li
+              a(href='##') 客户服务
+            li.separation
+            li
+              a(href='##') 网站导航
+            li.separation
+            li
+              a(href='##') 手机京东
+      .header-search
+        .wid
+          .logo
+            a(href='##')
+              img(src='../images/index/589ac5d7Nf9b451c8.png', alt='logo', style='display: block; width: 190px; height: 170px;')
+          #search.s-bar
+            form
+              input.s-text(type='text', value='')
+              button.search-btn(type='submit')
+                i.fa.fa-search
+          .my-cart
+            .word-icon
+              i.fa.fa-shopping-cart
+              span 我的购物车
+              span.num 0
+            .dropdown-layer
+              .cart-content
+                .nogoods
+                  i.img
+                  span 购物车中还没有商品，赶紧选购吧！
+          .hotwords
+            a(href='##') 2件5折
+            a(href='##') 手机专场
+            a(href='##') 满199减100
+          .navbar
+            ul.items-group
+              li.items
+                a(href='##') 秒杀
+              li
+                a(href='##') 优惠券
+              li
+                a(href='##') 闪购
+            .spacer
+            ul.items-group
+              li.items
+                a(href='##') 服装城
+              li
+                a(href='##') 京东超市
+              li
+                a(href='##') 生鲜
+              li
+                a(href='##') 全球购
+            .spacer
+            ul.items-group
+              li
+                a(href='##') 京东金融
+      .banner-block.clearfix
+        .left-menu
+          ul.menu-content
+          .menu-content-extends
+        .cols-center
+          .carousel-block
+            img(src='../images/index/banner/58d4d087N661d2ca9.jpg', alt='pic1')
+            img(src='../images/index/banner/58d8db62N403ccea7.jpg', alt='pic2')
+            img(src='../images/index/banner/58d49ae8N79b340ed.jpg', alt='pic3')
+            img(src='../images/index/banner/58d086d7N82b99e4d.jpg', alt='pic4')
+            img(src='../images/index/banner/58d863e4Nc14adecc.jpg', alt='pic5')
+            img(src='../images/index/banner/58d37009N5d3bba63.jpg', alt='pic6')
+            img(src='../images/index/banner/58d53740N7930dc34.jpg', alt='pic7')
+          .down-items
+            a(href='##')
+              img(src='../images/index/banner/58d9c3e8Nc0bebe84.jpg', alt='')
+            a(href='##')
+              img(src='../images/index/banner/58cf2cd8N580632b8.jpg', alt='')
+        .cols-right
+          .user-wrap
+            .user-info
+              .user-avatar
+                a(href='##')
+                  img(src='../images/index/banner/no_login.jpg', alt='')
+              .user_info
+                p.user_info_tips Hi，欢迎来到京东！
+                p
+                  a.user_info_login(href='##') 登陆
+                  a.user_info_reg(href='##') 注册
+            .user_profit
+              a.user_profit_lk(href='##') 新人福利
+              a.user_profit_lk(href='##') PLUS会员
+          .news
+            .news-tab
+              .tab-head
+                a.tab-head-item.item-first(href='#') 促销
+                a.tab-head-item.item-last(href='#') 公告
+                .tab-sidebar
+                a.tab-head-more-lk(href='##') 更多
+              .tab-content
+                ul.news-list
+                  li.news-item
+                    a.news-lk(href='##') 空调首发 晒单返100元E卡
+                  li.news-item
+                    a.news-lk(href='##') 鞋包会员节，高达满399减120
+                  li.news-item
+                    a.news-lk(href='##') 宝生元四月厨卫钜惠
+                  li.news-item
+                    a.news-lk(href='##') 领券立减800，家电焕新采购！
+                ul.news-list
+                  li.news-item
+                    a.news-lk(href='##') 京东文学奖拉开帷幕
+                  li.news-item
+                    a.news-lk(href='##') 京东成为中国最大家电零售商
+                  li.news-item
+                    a.news-lk(href='##') 京东自营家电清洗服务上线
+                  li.news-item
+                    a.news-lk(href='##') 京东帮服务店突破1700家
+          .service
+            .service-entry
+              ul.service-list.service-tab
+                li.service-item.tab-head-item
+                  a.service-lk(href='##')
+                    i.service-ico.service-ico-huafei
+                    p.service-txt 话费
+                li.service-item.tab-head-item
+                  a.service-lk(href='##')
+                    i.service-ico.service-ico-jipiao
+                    p.service-txt 机票
+                li.service-item.tab-head-item
+                  a.service-lk(href='##')
+                    i.service-ico.service-ico-jiudian
+                    p.service-txt 酒店
+                li.service-item.tab-head-item
+                  a.service-lk(href='##')
+                    i.service-ico.service-ico-youxi
+                    p.service-txt 游戏
+                li.service-item
+                  a.service-lk(href='##')
+                    i.service-ico.service-ico-qyg
+                    p.service-txt 企业购
+                li.service-item
+                  a.service-lk(href='##')
+                    i.service-ico.service-ico-jyk
+                    p.service-txt 加油卡
+                li.service-item
+                  a.service-lk(href='##')
+                    i.service-ico.service-ico-dyp
+                    p.service-txt 电影票
+                li.service-item
+                  a.service-lk(href='##')
+                    i.service-ico.service-ico-hcp
+                    p.service-txt 火车票
+                li.service-item
+                  a.service-lk(href='##')
+                    i.service-ico.service-ico-zhongchou
+                    p.service-txt 众筹
+                li.service-item
+                  a.service-lk(href='##')
+                    i.service-ico.service-ico-licai
+                    p.service-txt 理财
+                li.service-item
+                  a.service-lk(href='##')
+                    i.service-ico.service-ico-lipinka
+                    p.service-txt 礼品卡
+                li.service-item
+                  a.service-lk(href='##')
+                    i.service-ico.service-ico-baitiao
+                    p.service-txt 白条
+            .service-content
+              .tab-content-item
+                iframe(src='iframe/service_huafei', frameborder='0', height='186')
+              .tab-content-item
+              .tab-content-item
+              .tab-content-item
+              a#close_btn.service-close.fa.fa-times(href='##')
+      #content.index-content
+      #footer.index-footer
+block scripts
+  script(src='../js/jquery-1.9.1.js')
+  script(src='../js/index.js')
+  script(type='text/javascript').
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261669187'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1261669187%26online%3D1' type='text/javascript'%3E%3C/script%3E"));
